@@ -19,6 +19,8 @@ services:
 
   bot:
     container_name: hair-bot
+    # set enough memory to fix OOM issues
+    mem-limit: "1g"
     build:
       context: .
     restart: always

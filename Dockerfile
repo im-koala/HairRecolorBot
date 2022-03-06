@@ -11,4 +11,5 @@ RUN python -m pip install --upgrade pip && \
     pip install poetry && \
     poetry config virtualenvs.create false && \
     poetry install
+RUN apt-get install ffmpeg libsm6 libxext6  -y
 CMD ["python", "-O", "-m", "app"]

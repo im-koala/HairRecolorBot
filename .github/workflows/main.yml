@@ -25,7 +25,7 @@ jobs:
             git pull
 
             # Build the image with the new changes
-            docker build . -t bot
+            docker build . -t hair-bot
 
             # Shut down the existing containers
             docker-compose down

@@ -24,12 +24,6 @@ jobs:
             # Pull changes from the live branch
             git pull
 
-            # Build the image with the new changes
-            docker build . -t hair-bot
+            docker-compose up --build -d
 
-            # Shut down the existing containers
-            docker-compose down
-
-            # Start the new containers
-            docker-compose up -d
             echo "Deployed!"

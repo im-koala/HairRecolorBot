@@ -5,7 +5,7 @@ from app.models import UserModel
 
 
 async def get_default_message(m: Message, user: UserModel):
-    await m.answer(str(user), parse_mode=None)
+    await m.answer("приветик")
 
 
 def setup(dp: Dispatcher):

@@ -1,7 +1,7 @@
 [tool.poetry]
-name = "aiogram-template"
+name = "recolor_bot"
 version = "0.1.0"
-description = ""
+description = "Fun telegram bot"
 authors = ["rdfsx <m315498@gmail.com>"]
 
 [tool.poetry.dependencies]
@@ -15,6 +15,11 @@ uvloop = "^0.16.0"
 ujson = "^5.1.0"
 aiohttp = {extras = ["speedups"], version = "^3.8.1"}
 aiolimiter = "^1.0.0"
+numpy = "^1.22.2"
+torch = "1.9.0"
+opencv-python = "^4.5.5"
+torchvision = "0.10.0"
+scikit-image = "^0.19.2"
 
 [tool.poetry.dev-dependencies]
 

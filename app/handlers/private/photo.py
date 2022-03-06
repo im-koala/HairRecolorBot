@@ -35,7 +35,7 @@ async def cancel_photo_coloring(c: CallbackQuery):
     await c.message.delete() #type: ignore
     
 async def process_photo(c: CallbackQuery):
-    c.answer(cache_time=20)
+    c.answer(cache_time=10)
     files = os.listdir('images')
     for file in files:
         if str(c.from_user.id) in file:
